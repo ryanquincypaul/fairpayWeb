@@ -5,13 +5,13 @@ import 'rxjs/Rx';
 import 'rxjs/add/observable/throw';
 
 @Injectable()
-export class MinimumWageService {
+export class FairpayService {
   headers: Headers = new Headers({
     'Content-Type': 'application/json',
     Accept: 'application/json'
   });
 
-  api_url: string = 'http://fairpay.azurewebsites.net/minimum-wage';
+  api_url: string = 'http://fairpay.azurewebsites.net/fairpay';
 
   constructor(private http: Http) {}
 

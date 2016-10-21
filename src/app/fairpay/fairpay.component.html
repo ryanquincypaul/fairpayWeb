@@ -1,0 +1,4 @@
+<p>
+  <app-minimum-wage (minimumWageChanged)="minimumWageChanged($event)">loading...</app-minimum-wage>
+  <app-fairpayform *ngIf="minimumWage && minimumWage > 0" [minimumWageForCalculation]='minimumWage'>loading...</app-fairpayform>
+</p>

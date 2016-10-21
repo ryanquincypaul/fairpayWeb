@@ -1,0 +1,26 @@
+<h4>Great. Now let's get some more information on the pay period in question</h4>
+<form (ngSubmit)="onSubmit()">
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
+			<label for="timeSpan">Time Span</label>
+			<select [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan">
+				<option value="weekly">Weekly</option>
+			</select>
+		</div>
+		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
+			<label for="grossWages">Gross Wages</label>
+			<input type="text" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
+			<label for="hoursWorked">Hours Worked</label>
+			<input type="text" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked">
+		</div>
+		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
+			<label for="minimumWage">Minimum Wage</label>
+			<input type="text" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage">
+		</div>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+	</form>

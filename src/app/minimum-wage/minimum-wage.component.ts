@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Year, State, StateDetail, FederalWageDetail, MinimumWageService } from './shared';
 
 @Component({
@@ -17,12 +17,8 @@ export class MinimumWageComponent implements OnInit {
   selectedStateDetail: StateDetail;
 
   federalWageDetail: FederalWageDetail;
-
-  //Fields needed for fairpay call
-  timeSpan: string;
-  grossWages: number;
-  hoursWorked: number;
   minimumWage: number;
+  @Output() minimumWageChanged = new EventEmitter<number>();
 
   constructor(private minimumWageService: MinimumWageService) { 
     this.minimumWageService.get("/years").subscribe(
@@ -69,6 +65,7 @@ export class MinimumWageComponent implements OnInit {
   determineLargestMinimumWage() {
     //return 0 if nothing exists
     this.minimumWage = Math.max(this.getStateMinimumWage(), this.getFederalMinimumWage());
+    this.minimumWageChanged.emit(this.minimumWage);
     console.log(this.minimumWage);
   }
 
