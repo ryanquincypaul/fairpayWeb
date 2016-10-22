@@ -88,5 +88,4 @@ export class MinimumWageComponent implements OnInit {
   isEmptyObject(obj) {
     return (Object.keys(obj).length === 0);
   }
-
 }

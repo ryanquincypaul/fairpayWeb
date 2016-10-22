@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FairpayResponse, WageBreakdown, FairpayRequest, FairpayService } from './shared';
 
 @Component({
@@ -9,20 +9,14 @@ import { FairpayResponse, WageBreakdown, FairpayRequest, FairpayService } from '
 })
 export class FairpayformComponent implements OnInit {
   @Input() minimumWageForCalculation: number;
-
-  //Fields needed for fairpay call
-  // timeSpan: string;
-  // grossWages: number;
-  // hoursWorked: number;
+  @Output() fairpayResponseReceived = new EventEmitter<FairpayResponse>();
 
   request = new FairpayRequest();
-
 
   constructor(private fairpayService: FairpayService) { }
 
   ngOnInit() {
   }
-
   
   onSubmit() {
     console.log("submitted");
@@ -47,7 +41,8 @@ export class FairpayformComponent implements OnInit {
   }
 
   fairpayCallBack(fairpayResponse: FairpayResponse) {
-    alert(JSON.stringify(fairpayResponse));
+    console.log(JSON.stringify(fairpayResponse));
+    this.fairpayResponseReceived.emit(fairpayResponse);
   }
 
   //sync input property with request
@@ -56,7 +51,6 @@ export class FairpayformComponent implements OnInit {
     console.log(this.request.minimumWage);
     this.request.minimumWage = this.minimumWageForCalculation;
     console.log(this.request.minimumWage);
-
   }
 
 }

@@ -1,8 +1,8 @@
-import { WageBreakdown } from './wageBreakdown.model';
+import { WageBreakdown, FairpayError } from './';
 
 export class FairpayResponse {
     is_error: boolean;
-    error: {};
+    error: FairpayError;
     fairpay: boolean;
     wage_breakdown: WageBreakdown;
 

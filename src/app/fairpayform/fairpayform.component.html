@@ -1,26 +1,23 @@
 <h4>Great. Now let's get some more information on the pay period in question</h4>
 <form (ngSubmit)="onSubmit()">
-	<div class="row">
-		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
-			<label for="timeSpan">Time Span</label>
-			<select [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan">
-				<option value="weekly">Weekly</option>
-			</select>
-		</div>
-		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
-			<label for="grossWages">Gross Wages</label>
-			<input type="text" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages">
-		</div>
+	<div class="form-group">
+		<label for="timeSpan">Pay Period Length</label>
+		<select [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan" class="form-control">
+			<option value="weekly">Weekly</option>
+		</select>
 	</div>
-	<div class="row">
-		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
-			<label for="hoursWorked">Hours Worked</label>
-			<input type="text" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked">
-		</div>
-		<div class="col-xs-offset-1 col-xs-8 col-sm-offset-1 col-sm-4">
-			<label for="minimumWage">Minimum Wage</label>
-			<input type="text" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage">
-		</div>
+	<div class="form-group">
+		<label for="grossWages">Gross Wages</label>
+		<input type="number" step="any" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages" class="form-control" placeholder="Enter Gross Wages for the pay period...">
 	</div>
-	<button type="submit" class="btn btn-default">Submit</button>
-	</form>
+	<div class="form-group">
+		<label for="hoursWorked">Hours Worked</label>
+		<input type="number" step="any" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked" class="form-control" placeholder="Enter hours worked for pay period...">
+	</div>
+	<div class="form-group">
+		<label for="minimumWage">Minimum Wage</label>
+		<input type="number" step="any" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage" class="form-control">
+	</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
