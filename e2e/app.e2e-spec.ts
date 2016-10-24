@@ -1,10 +1,10 @@
-import { CliTestPage } from './app.po';
+import { FairpayWebPage } from './app.po';
 
 describe('fairpayWeb App', function() {
-  let page: CliTestPage;
+  let page: FairpayWebPage;
 
   beforeEach(() => {
-    page = new CliTestPage();
+    page = new FairpayWebPage();
   });
 
   it('should display message saying app works', () => {
