@@ -1,6 +1,6 @@
 import { CliTestPage } from './app.po';
 
-describe('cli-test App', function() {
+describe('fairpayWeb App', function() {
   let page: CliTestPage;
 
   beforeEach(() => {
