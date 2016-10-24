@@ -11,7 +11,8 @@ export class MinimumWageService {
     Accept: 'application/json'
   });
 
-  api_url: string = 'http://fairpay.azurewebsites.net/minimum-wage';
+  api_url: string = 'https://fairpay.azurewebsites.net/minimum-wage';
+    //LOCALTESTING with Lein Ring Server on minimum-wage webservice : api_url: string = 'https://localhost:3000';
 
   constructor(private http: Http) {}
 

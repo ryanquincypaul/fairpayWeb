@@ -11,7 +11,8 @@ export class FairpayService {
     Accept: 'application/json'
   });
 
-  api_url: string = 'http://fairpay.azurewebsites.net/fairpay';
+  api_url: string = 'https://fairpay.azurewebsites.net/fairpay';
+  //LOCALTESTING with Lein Ring Server on fairpay webservice : api_url: string = 'https://localhost:3000';
 
   constructor(private http: Http) {}
 
