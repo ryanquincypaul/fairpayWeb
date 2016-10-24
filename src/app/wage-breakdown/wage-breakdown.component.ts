@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { WageBreakdown, FairpayError, FairpayResponse } from '../fairpayform/shared/models';
+import { WageBreakdown, FairpayError, FairpayResponse } from '../fairpayform/shared';
+import { LanguageSettingsWageBreakdown } from '../shared';
 
 @Component({
   selector: 'app-wage-breakdown',
@@ -8,6 +9,7 @@ import { WageBreakdown, FairpayError, FairpayResponse } from '../fairpayform/sha
 })
 export class WageBreakdownComponent implements OnInit {
   @Input() fairpayResponse: FairpayResponse;
+  @Input() languageSettings: LanguageSettingsWageBreakdown;
 
   constructor() { }
 

@@ -8,6 +8,7 @@ import { MinimumWageComponent } from './minimum-wage/minimum-wage.component';
 import { FairpayComponent } from './fairpay/fairpay.component';
 import { FairpayformComponent } from './fairpayform/fairpayform.component';
 import { WageBreakdownComponent } from './wage-breakdown/wage-breakdown.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { WageBreakdownComponent } from './wage-breakdown/wage-breakdown.componen
     MinimumWageComponent,
     FairpayComponent,
     FairpayformComponent,
-    WageBreakdownComponent
+    WageBreakdownComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

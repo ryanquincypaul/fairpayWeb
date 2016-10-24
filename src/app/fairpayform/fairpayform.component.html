@@ -1,23 +1,23 @@
-<h4>Great. Now let's get some more information on the pay period in question</h4>
+<h4>{{languageSettings.mainDescriptionText}}</h4>
 <form (ngSubmit)="onSubmit()">
 	<div class="form-group">
-		<label for="timeSpan">Pay Period Length</label>
+		<label for="timeSpan">{{languageSettings.timeSpanLabelText}}</label>
 		<select [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan" class="form-control">
-			<option value="weekly">Weekly</option>
+			<option value="weekly">{{languageSettings.timeSpanWeeklyText}}</option>
 		</select>
 	</div>
 	<div class="form-group">
-		<label for="grossWages">Gross Wages</label>
-		<input type="number" step="any" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages" class="form-control" placeholder="Enter Gross Wages for the pay period...">
+		<label for="grossWages">{{languageSettings.grossWagesLabelText}}</label>
+		<input type="number" step="any" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages" class="form-control" placeholder="{{languageSettings.grossWagesPlaceHolderText}}">
 	</div>
 	<div class="form-group">
-		<label for="hoursWorked">Hours Worked</label>
-		<input type="number" step="any" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked" class="form-control" placeholder="Enter hours worked for pay period...">
+		<label for="hoursWorked">{{languageSettings.hoursWorkedLabelText}}</label>
+		<input type="number" step="any" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked" class="form-control" placeholder="{{languageSettings.hoursWorkedPlaceHolderText}}">
 	</div>
 	<div class="form-group">
-		<label for="minimumWage">Minimum Wage</label>
+		<label for="minimumWage">{{languageSettings.minimumWageLabelText}}</label>
 		<input type="number" step="any" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage" class="form-control">
 	</div>
 
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<button type="submit" class="btn btn-primary">{{languageSettings.submitButtonText}}</button>
 </form>

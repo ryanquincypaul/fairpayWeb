@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FairpayResponse, WageBreakdown, FairpayRequest, FairpayService } from './shared';
+import { LanguageSettingsFairpayForm } from '../shared';
 
 @Component({
   selector: 'app-fairpayform',
@@ -8,6 +9,7 @@ import { FairpayResponse, WageBreakdown, FairpayRequest, FairpayService } from '
   providers: [FairpayService]
 })
 export class FairpayformComponent implements OnInit {
+  @Input() languageSettings: LanguageSettingsFairpayForm;
   @Input() minimumWageForCalculation: number;
   @Output() fairpayResponseReceived = new EventEmitter<FairpayResponse>();
 

@@ -1,8 +1,8 @@
 <div>
-	<h4>Let's determine the minimum wage that applies to your check.</h4>
+	<h4>{{languageSettings.yearDescriptionText}}</h4>
 	<div class="">
 		<div class="input-group" *ngIf="!isEmptyObject(years)">
-			<span class="input-group-addon">Year</span>
+			<span class="input-group-addon">{{languageSettings.yearLabelText}}</span>
 			<select [(ngModel)]="selectedYear" (ngModelChange)="onYearChange($event)" class="form-control">
 				<option *ngFor="let year of years" [ngValue]="year">{{year.year}}</option>  
 			</select>
@@ -11,7 +11,7 @@
 	<br>
 	<div class="">
 		<div class="input-group" *ngIf="!isEmptyObject(states)">
-			<span class="input-group-addon">State</span>
+			<span class="input-group-addon">{{languageSettings.stateLabelText}}</span>
 			<select *ngIf="selectedYear" [(ngModel)]="selectedState" (ngModelChange)="onStateChange($event)" class="form-control">
 				<option *ngFor="let state of states" [ngValue]="state">{{state.state}}</option>  
 			</select>

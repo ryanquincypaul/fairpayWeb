@@ -3,6 +3,7 @@ import { FairpayformComponent} from '../fairpayform';
 import { MinimumWageComponent } from '../minimum-wage';
 import { WageBreakdownComponent} from '../wage-breakdown';
 import { FairpayResponse } from '../fairpayform/shared';
+import { LanguageSettings } from '../shared';
 
 @Component({
   selector: 'app-fairpay',
@@ -11,9 +12,11 @@ import { FairpayResponse } from '../fairpayform/shared';
 })
 export class FairpayComponent implements OnInit {
 
-  constructor() { }
   minimumWage: number;
   fairpayResponse: FairpayResponse;
+  @Input() languageSettings: LanguageSettings;
+
+  constructor() { }
 
   ngOnInit() {
   }

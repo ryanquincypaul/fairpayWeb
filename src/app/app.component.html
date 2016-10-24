@@ -1,3 +1,4 @@
 <h1>
-  <app-fairpay>Loading</app-fairpay>
+  <app-nav-bar (languageChanged)="onLanguageChanged($event)" [languageSettings]="languageSettings.navBar">loading nav-bar</app-nav-bar>
+  <app-fairpay [languageSettings]="languageSettings">Loading</app-fairpay>
 </h1>

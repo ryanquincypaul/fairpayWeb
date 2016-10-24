@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Year, State, StateDetail, FederalWageDetail, MinimumWageService } from './shared';
+import { LanguageSettingsMinimumWage} from '../shared';
 
 @Component({
   selector: 'app-minimum-wage',
@@ -18,6 +19,7 @@ export class MinimumWageComponent implements OnInit {
 
   federalWageDetail: FederalWageDetail;
   minimumWage: number;
+  @Input() languageSettings: LanguageSettingsMinimumWage;
   @Output() minimumWageChanged = new EventEmitter<number>();
 
   constructor(private minimumWageService: MinimumWageService) { 
