@@ -54,11 +54,11 @@ export class LanguageSettingsHelper {
             about.projectLinksMarkup = `
                 <h1>Development</h1>
                 <br>
-                <p>This Angular 2 powered application was written as a proof of concept for an easy to use wage theft calculator. The code can be found <a href="https://ryanquincypaul.github.io/fairpayWeb">here</a>.</p>
+                <p>This Angular 2 powered application was written as a proof of concept for an easy to use wage theft calculator. The code can be found <a href="https://github.com/ryanquincypaul/fairpayWeb">here</a>.</p>
                 <br>
                 <h2>Web Service Dependencies</h2>
                 </br>
-                <p>This app uses the <a href="https://ryanquincypaul.github.io/minimum-wage">minimum-wage</a> and <a href="https://ryanquincypaul.github.io/fairpay">fairpay</a> web services.</p>`
+                <p>This app uses the <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> and <a href="https://github.com/ryanquincypaul/fairpay">fairpay</a> web services.</p>`
 
             about.contactMeMarkup = `
                 <h1>Contact Me</h1>
@@ -111,11 +111,11 @@ export class LanguageSettingsHelper {
             about.projectLinksMarkup = `
                 <h1> Desarrollo </h1>
                 <br>
-                <p> Esta angular 2 aplicación accionado fue escrito como una prueba de concepto para un fácil de usar calculadora robo de salarios. El código se puede encontrar <a href="https://ryanquincypaul.github.io/fairpayWeb"> aquí </a>. </p>
+                <p> Esta angular 2 aplicación accionado fue escrito como una prueba de concepto para un fácil de usar calculadora robo de salarios. El código se puede encontrar <a href="https://github.com/ryanquincypaul/fairpayWeb"> aquí </a>. </p>
                 <br>
                 <h2> Dependencias de servicio web </h2>
                 <br>
-                <P> Esta aplicación utiliza la <a href="https://ryanquincypaul.github.io/minimum-wage">minimum-wage</a> y <a href = "https://ryanquincypaul.github.io/fairpay">fairpay</a> servicios web. </p>`;
+                <P> Esta aplicación utiliza la <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> y <a href = "https://github.com/ryanquincypaul/fairpay">fairpay</a> servicios web. </p>`;
 
             about.contactMeMarkup = `
                 <h1> Contacto Me </h1>
