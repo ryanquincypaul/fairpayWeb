@@ -1,6 +1,6 @@
 # FairpayWeb
 
-A web application powered by Angular 2 that provides clear information regarding illegal underpayment based on Federal, State, and (eventually) Local law. 
+A web application powered by Angular 2 that determines potential wage theft based on Federal, State, and (eventually) Local law. 
 
 ## Hosting Info
 Check it out live [here](https://ryanquincypaul.github.io/fairpayWeb).
@@ -19,13 +19,14 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## TODO
 
-As this is a proof of concept, any further changes made to this project will be for I hope to add/fix the following
+As this is a proof of concept, any further changes made to this project will be for demo purposes only. I would also like to add the following to the future iteration of this app.
 * Add local minimum wage information
-* Nicer home page
-* Prune needless URL attributes from responses (e.g. when there are no federal wages for a year)* 
+* Design the UI based on requirements from the requesting user instead of just rolling standard Bootstrap
+* Accurate translations
+* More translations (Arabic, French, Bangla, etc.) to keep us with large populations in the US
+* Provide location specific law office or non-profit contact info for users to contact regarding potential wage theft.
 
 # Angular-CLI Information
-
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
