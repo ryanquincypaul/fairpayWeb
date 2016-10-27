@@ -22,8 +22,9 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 As this is a proof of concept, any further changes made to this project will be for demo purposes only. I would also like to add the following to the future iteration of this app.
 * Add local minimum wage information
 * Design the UI based on requirements from the requesting user instead of just rolling standard Bootstrap
+* Write tests (Jasmine?) based on the UI requirements
 * Accurate translations
-* More translations (Arabic, French, Bangla, etc.) to keep us with large populations in the US
+* More translations (Arabic, French, Bangla, etc.) to keep us with large immigrant populations in the US
 * Provide location specific law office or non-profit contact info for users to contact regarding potential wage theft.
 
 # Angular-CLI Information
