@@ -2,3 +2,8 @@
 body {
 	background: #f5f5f5;
 }
+.fair_pay_form .container {
+	background: #ffffff;
+	color: #bbbbbb;
+	border: 1px solid #cccccc;
+}
