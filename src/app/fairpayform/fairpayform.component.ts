@@ -21,8 +21,6 @@ export class FairpayformComponent implements OnInit {
   }
   
   onSubmit() {
-    console.log("submitted");
-
     //there has to be a better way to handle minwage as an input parameter and still use a request object
     this.onMinimumWageChange();
 
@@ -38,21 +36,16 @@ export class FairpayformComponent implements OnInit {
       path += `calculate-weekly-pay`;
     }
     path += `?minimum_wage=${this.request.minimumWage}&hours_worked=${this.request.hoursWorked}&gross_wages=${this.request.grossWages}`;
-    console.log(path);
     return path;
   }
 
   fairpayCallBack(fairpayResponse: FairpayResponse) {
-    console.log(JSON.stringify(fairpayResponse));
     this.fairpayResponseReceived.emit(fairpayResponse);
   }
 
   //sync input property with request
   onMinimumWageChange() {
-    console.log("minimum wage updated")
-    console.log(this.request.minimumWage);
     this.request.minimumWage = this.minimumWageForCalculation;
-    console.log(this.request.minimumWage);
   }
 
 }

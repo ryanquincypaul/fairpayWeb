@@ -1,5 +1,5 @@
 <div>
-  <app-minimum-wage (minimumWageChanged)="minimumWageChanged($event)" [languageSettings]="languageSettings.minWage">loading...</app-minimum-wage>
-  <app-fairpayform *ngIf="minimumWage && minimumWage > 0" [minimumWageForCalculation]='minimumWage' (fairpayResponseReceived)='fairpayResponseReceived($event)' [languageSettings]="languageSettings.fairpayForm">loading...</app-fairpayform>
-  <app-wage-breakdown *ngIf="fairpayResponse" [fairpayResponse]='fairpayResponse' [languageSettings]="languageSettings.wageBreakdown"></app-wage-breakdown>
+  <app-minimum-wage *ngIf="navigationLocation == 'FairPay'" (minimumWageChanged)="minimumWageChanged($event)" [languageSettings]="languageSettings.minWage">loading...</app-minimum-wage>
+  <app-fairpayform *ngIf="navigationLocation == 'FairPay' && minimumWage && minimumWage > 0" [minimumWageForCalculation]='minimumWage' (fairpayResponseReceived)='fairpayResponseReceived($event)' [languageSettings]="languageSettings.fairpayForm">loading...</app-fairpayform>
+  <app-wage-breakdown (wageBreakdownExit)="onWageBreakdownExit($event)" *ngIf="navigationLocation == 'WageBreakdown' && fairpayResponse" [fairpayResponse]='fairpayResponse' [languageSettings]="languageSettings.wageBreakdown"></app-wage-breakdown>
 </div>

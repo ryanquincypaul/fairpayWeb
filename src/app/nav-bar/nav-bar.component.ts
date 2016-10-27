@@ -9,15 +9,17 @@ import { LanguageSettingsNavBar } from '../shared';
 export class NavBarComponent implements OnInit {
   //default to english
   selectedLanguage: string = "english";
+  currentNavigationSelection: string = "FairPay"; 
   @Input() languageSettings: LanguageSettingsNavBar;
   @Output() languageChanged = new EventEmitter<string>();
+  @Output() navigationLocationChanged = new EventEmitter<string>();
+
 
   constructor() { 
     
   }
 
   ngOnInit() {
-    console.log("ngoninit navbar" + JSON.stringify(this.languageSettings));
   }
 
   switchLanguage() {
@@ -29,6 +31,11 @@ export class NavBarComponent implements OnInit {
 
     this.languageChanged.emit(this.selectedLanguage);
 
+  }
+
+  changeNavigationLocation(location: string) {
+    this.currentNavigationSelection = location;
+    this.navigationLocationChanged.emit(location);
   }
 
 }

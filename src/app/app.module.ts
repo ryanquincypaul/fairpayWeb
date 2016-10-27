@@ -9,6 +9,7 @@ import { FairpayComponent } from './fairpay/fairpay.component';
 import { FairpayformComponent } from './fairpayform/fairpayform.component';
 import { WageBreakdownComponent } from './wage-breakdown/wage-breakdown.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     FairpayComponent,
     FairpayformComponent,
     WageBreakdownComponent,
-    NavBarComponent
+    NavBarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -8,17 +8,20 @@ import { LanguageSettings, LanguageSettingsHelper } from './shared';
 })
 export class AppComponent {
   languageSettings: LanguageSettings;
+  navigationLocation: string = "FairPay";
   languageHelper: LanguageSettingsHelper = new LanguageSettingsHelper();
 
   onLanguageChanged(language: string) {
     this.languageSettings =  this.languageHelper.getLanguageSettings(language);
   }
 
+  onNavigationLocationChanged(location: string) {
+    this.navigationLocation = location;
+  }
+
   constructor() {
     //default language to english
     this.languageSettings = this.languageHelper.getLanguageSettings("english");
-    console.log("blah" + JSON.stringify(this.languageSettings));
-
   }
 
   ngOnInit() {

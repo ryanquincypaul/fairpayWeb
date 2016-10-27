@@ -7,7 +7,6 @@ export class StateDetail {
     year_url: string;
     federal_wage_info_url: string;
     constructor(state:any) {
-        console.log("statedetail");
         this.year = state.year;
         this.state = state.state;
         this.postalcode = state.postalcode;

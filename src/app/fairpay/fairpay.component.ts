@@ -15,7 +15,8 @@ export class FairpayComponent implements OnInit {
   minimumWage: number;
   fairpayResponse: FairpayResponse;
   @Input() languageSettings: LanguageSettings;
-
+  @Input() navigationLocation: string;
+  
   constructor() { }
 
   ngOnInit() {
@@ -26,8 +27,13 @@ export class FairpayComponent implements OnInit {
   }
 
   fairpayResponseReceived(response: FairpayResponse) {
-    console.log("yolo");
     this.fairpayResponse = response;
+    this.navigationLocation = "WageBreakdown";
+  }
+
+  onWageBreakdownExit() {
+    this.minimumWage = 0; //zeroing out because for some reason it didn't like everything else
+    this.navigationLocation = "FairPay";
   }
 
 

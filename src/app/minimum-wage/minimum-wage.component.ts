@@ -68,7 +68,6 @@ export class MinimumWageComponent implements OnInit {
     //return 0 if nothing exists
     this.minimumWage = Math.max(this.getStateMinimumWage(), this.getFederalMinimumWage());
     this.minimumWageChanged.emit(this.minimumWage);
-    console.log(this.minimumWage);
   }
 
   getStateMinimumWage() {

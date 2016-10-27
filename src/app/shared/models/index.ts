@@ -3,3 +3,4 @@ export * from './language-settings.model';
 export * from './language-settings-minimum-wage.model';
 export * from './language-settings-fairpayform.model';
 export * from './language-settings-wage-breakdown.model';
+export * from './language-settings-about.model';

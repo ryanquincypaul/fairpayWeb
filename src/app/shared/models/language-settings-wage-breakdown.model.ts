@@ -8,6 +8,7 @@ export class LanguageSettingsWageBreakdown {
     differenceText: string;
     unfairpayText: string;
     fairpayText: string;
+    exitButtonText: string;
 
     constructor() {
 

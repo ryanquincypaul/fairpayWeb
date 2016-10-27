@@ -10,4 +10,5 @@
     <li class="list-group-item">{{languageSettings.reportedGrossWagesText}}: {{fairpayResponse.wage_breakdown.reported_gross_wages}}</li>
     <li class="list-group-item" *ngIf="!fairpayResponse.fairpay">{{languageSettings.differenceText}}: {{fairpayResponse.wage_breakdown.difference}}</li>
   </ul>
+  <button (click)="exitButtonClicked()">{{languageSettings.exitButtonText}}</button>
 </div>
