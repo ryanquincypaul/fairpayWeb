@@ -49,20 +49,17 @@ export class LanguageSettingsHelper {
 
             about.appDescriptionMarkup = `
                 <h1>About FairPay</h1>
-                <br><p>FairPay is a wage theft detection tool. Using up to date minimum wage calculations, FairPay will tell you if you are paid under State and Federal regulations and by how much.</p>`;
+                <p>FairPay is a wage theft detection tool. Using up to date minimum wage calculations, FairPay will tell you if you are paid under State and Federal regulations and by how much.</p>`;
 
             about.projectLinksMarkup = `
                 <h1>Development</h1>
-                <br>
                 <p>This Angular 2 powered application was written as a proof of concept for an easy to use wage theft calculator. The code can be found <a href="https://github.com/ryanquincypaul/fairpayWeb">here</a>.</p>
-                <br>
-                <h2>Web Service Dependencies</h2>
-                </br>
-                <p>This app uses the <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> and <a href="https://github.com/ryanquincypaul/fairpay">fairpay</a> web services.</p>`
+                <h4>Web Service Dependencies</h4>
+                <p>This app uses the <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> and <a href="https://github.com/ryanquincypaul/fairpay">fairpay</a> web services.</p>`;
 
             about.contactMeMarkup = `
                 <h1>Contact Me</h1>
-                <p>My name is Ryan Paul and you can get contact details and view my other projects <a href="https://ryanquincypaul.github.io">here</a>. </p>`
+                <p>My name is Ryan Paul and you can get contact details and view my other projects <a href="https://ryanquincypaul.github.io">here</a>. </p>`;
             languageSettings.about = about;
 
 
@@ -104,23 +101,18 @@ export class LanguageSettingsHelper {
             languageSettings.wageBreakdown = wageBreakdown;
 
             about.appDescriptionMarkup = `
-                <h1> Acerca de FairPay </h1>
-                <br>
-                <P> FairPay es una herramienta de detección de robo de salarios. Utilizando hasta cálculos de salarios mínimos fecha, FairPay le dirá si le pagan en virtud de las regulaciones estatales y federales y en qué medida </p> `;
+                <h1>Acerca de FairPay</h1>
+                <p>FairPay es una herramienta de detección de robo de salarios. Utilizando hasta cálculos de salarios mínimos fecha, FairPay le dirá si le pagan en virtud de las regulaciones estatales y federales y en qué medida.</p>`;
 
             about.projectLinksMarkup = `
-                <h1> Desarrollo </h1>
-                <br>
-                <p> Esta angular 2 aplicación accionado fue escrito como una prueba de concepto para un fácil de usar calculadora robo de salarios. El código se puede encontrar <a href="https://github.com/ryanquincypaul/fairpayWeb"> aquí </a>. </p>
-                <br>
-                <h2> Dependencias de servicio web </h2>
-                <br>
-                <P> Esta aplicación utiliza la <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> y <a href = "https://github.com/ryanquincypaul/fairpay">fairpay</a> servicios web. </p>`;
+                <h1>Desarrollo</h1>
+                <p>Esta angular 2 aplicación accionado fue escrito como una prueba de concepto para un fácil de usar calculadora robo de salarios. El código se puede encontrar <a href="https://github.com/ryanquincypaul/fairpayWeb">aquí</a>.</p>
+                <h4>Dependencias de servicio web</h4>
+                <p>Esta aplicación utiliza la <a href="https://github.com/ryanquincypaul/minimum-wage">minimum-wage</a> y <a href="https://github.com/ryanquincypaul/fairpay">fairpay</a> servicios web.</p>`;
 
             about.contactMeMarkup = `
-                <h1> Contacto Me </h1>
-                <br>
-                <p> Mi nombre es Ryan Paul y se puede obtener información de contacto y ver mis otros proyectos <a href="https://ryanquincypaul.github.io"> aquí </a>. </p> `;
+                <h1>Contacto Me</h1>
+                <p>Mi nombre es Ryan Paul y se puede obtener información de contacto y ver mis otros proyectos <a href="https://ryanquincypaul.github.io">aquí</a>.</p>`;
             languageSettings.about = about;
         }
         
