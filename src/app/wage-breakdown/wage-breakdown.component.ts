@@ -18,7 +18,6 @@ export class WageBreakdownComponent implements OnInit {
   }
 
   exitButtonClicked() {
-    console.log("yo");
     this.wageBreakdownExit.emit("exit");
   }
 

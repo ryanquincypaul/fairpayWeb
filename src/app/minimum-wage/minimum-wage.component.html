@@ -9,8 +9,10 @@
 		</div>
 	</div>
 	<br>
-	<div class="">
-		<div class="input-group" *ngIf="!isEmptyObject(states)">
+	
+	<div class="" *ngIf="!isEmptyObject(states)">
+		<h4>{{languageSettings.stateDescriptionText}}</h4>
+		<div class="input-group" >
 			<span class="input-group-addon">{{languageSettings.stateLabelText}}</span>
 			<select *ngIf="selectedYear" [(ngModel)]="selectedState" (ngModelChange)="onStateChange($event)" class="form-control">
 				<option *ngFor="let state of states" [ngValue]="state">{{state.state}}</option>  

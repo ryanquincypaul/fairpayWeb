@@ -33,6 +33,9 @@ export class MinimumWageComponent implements OnInit {
   }
 
   onYearChange(year) {
+    //clear out the minimumWage to hide the fairpay form if a state was already selected
+    this.minimumWage = null;
+    this.minimumWageChanged.emit(this.minimumWage);
     if (year) {
       this.minimumWageService.get(year.federal_wage_info_url).subscribe(
         data => this.getFederalWageCallback(data),
@@ -47,7 +50,7 @@ export class MinimumWageComponent implements OnInit {
 
   getFederalWageCallback(federalWageDetailResponse) {
     this.federalWageDetail = federalWageDetailResponse;
-    this.determineLargestMinimumWage();
+    //this.determineLargestMinimumWage();
   }
 
   onStateChange(state) {

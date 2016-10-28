@@ -17,9 +17,9 @@ export class LanguageSettingsHelper {
             navbar.languageLinkText = "Habla Espanol?";
             languageSettings.navBar = navbar;
 
-            minimumWage.yearDescriptionText = "Let's determine the minimum wage that applies to your check.";
+            minimumWage.yearDescriptionText = "Let's determine the minimum wage that applies to your check";
             minimumWage.yearLabelText = "Year";
-            minimumWage.stateDescriptionText = "Now select a state to see if they have their own Minimum Wage law...";
+            minimumWage.stateDescriptionText = "Now select the state where you received your check";
             minimumWage.stateLabelText = "State";
             languageSettings.minWage = minimumWage;
 
@@ -69,20 +69,20 @@ export class LanguageSettingsHelper {
             navbar.languageLinkText = "Speak English?";
             languageSettings.navBar = navbar;
 
-            minimumWage.yearDescriptionText = "Vamos a determinar el salario mínimo que se aplica a su cheque.";
+            minimumWage.yearDescriptionText = "Vamos a determinar el salario mínimo que se aplica a su cheque";
             minimumWage.yearLabelText = "Año";
-            minimumWage.stateDescriptionText = "Seleccione un estado para ver si tienen su propia ley de salario mínimo ...";
+            minimumWage.stateDescriptionText = "A continuación, seleccione el estado en el que ha recibido su cheque";
             minimumWage.stateLabelText = "Estado";
             languageSettings.minWage = minimumWage;
 
             fairpayForm.timeSpanLabelText = "Longitud período de pago";
-            fairpayForm.timeSpanWeeklyText = "semanal";
-            fairpayForm.mainDescriptionText = ". Gran Ahora vamos a obtener algo más de información sobre el período de pago de que se trate";
+            fairpayForm.timeSpanWeeklyText = "Semanal";
+            fairpayForm.mainDescriptionText = "Gran Ahora vamos a obtener algo más de información sobre el período de pago de que se trate";
             fairpayForm.grossWagesLabelText = "Los salarios brutos";
             fairpayForm.grossWagesPlaceHolderText = "Introduzca los salarios brutos del período de pago ...";
-            fairpayForm.hoursWorkedLabelText = "horas trabajadas";
+            fairpayForm.hoursWorkedLabelText = "Horas Trabajadas";
             fairpayForm.hoursWorkedPlaceHolderText = "Introduzca las horas trabajadas por período de pago ...";
-            fairpayForm.minimumWageLabelText = "salario mínimo";
+            fairpayForm.minimumWageLabelText = "Salario Mínimo";
             fairpayForm.minimumWagePlaceHolderText = "Introduzca el salario mínimo que se aplica a este cheque";
             fairpayForm.submitButtonText = "Calcular";
             languageSettings.fairpayForm = fairpayForm;
@@ -90,14 +90,14 @@ export class LanguageSettingsHelper {
             
             wageBreakdown.unfairpayText = "Parece que no están pagando lo suficiente de acuerdo con los reglamentos federales y estatales, en contacto con lawyer@lawyer.com ayuda";
             wageBreakdown.fairpayText = "Parece que usted está pagando de acuerdo a la regulación federal y estatal";           
-            wageBreakdown.normalHoursText = "de los horarios normales";
-            wageBreakdown.normalPayText = "Normal de pago";
-            wageBreakdown.overtimeHoursText = "horas extraordinarias";
-            wageBreakdown.overtimePayText = "pago por tiempo extra";
-            wageBreakdown.totalPayText = "pago total";
-            wageBreakdown.reportedGrossWagesText = "Los salarios reportados";
-            wageBreakdown.differenceText = "Cantidad Bajo pago";
-            wageBreakdown.exitButtonText = "regresa";
+            wageBreakdown.normalHoursText = "Horarios Normales";
+            wageBreakdown.normalPayText = "Normal de Pago";
+            wageBreakdown.overtimeHoursText = "Horas Extraordinarias";
+            wageBreakdown.overtimePayText = "Pago por Tiempo Extra";
+            wageBreakdown.totalPayText = "Pago Total";
+            wageBreakdown.reportedGrossWagesText = "Los Salarios Reportados";
+            wageBreakdown.differenceText = "Cantidad Bajo Pago";
+            wageBreakdown.exitButtonText = "Regresa";
             languageSettings.wageBreakdown = wageBreakdown;
 
             about.appDescriptionMarkup = `
