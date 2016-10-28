@@ -2,6 +2,8 @@
 
 A web application powered by Angular 2 that determines potential wage theft based on Federal, State, and (eventually) Local law. 
 
+CSS Edits--- 
+
 ## Hosting Info
 Check it out live [here](https://ryanquincypaul.github.io/fairpayWeb).
 
