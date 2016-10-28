@@ -8,7 +8,7 @@ import { LanguageSettings } from '../shared';
 @Component({
   selector: 'app-fairpay',
   templateUrl: './fairpay.component.html',
-  styleUrls: ['./fairpay.component.css']
+  styleUrls: ['fairpay.component.css']
 })
 export class FairpayComponent implements OnInit {
 
