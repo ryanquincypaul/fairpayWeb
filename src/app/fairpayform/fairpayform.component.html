@@ -5,21 +5,21 @@
 		<form (ngSubmit)="onSubmit()">
 			<div class="form-group">
 				<label for="timeSpan">{{languageSettings.timeSpanLabelText}}</label>
-				<select [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan" class="form-control">
+				<select required [(ngModel)]="request.timeSpan" name="timeSpan" id="timeSpan" class="form-control">
 					<option value="weekly">{{languageSettings.timeSpanWeeklyText}}</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="grossWages">{{languageSettings.grossWagesLabelText}}</label>
-				<input type="number" step="any" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages" class="form-control" placeholder="{{languageSettings.grossWagesPlaceHolderText}}">
+				<input type="number" required min="0" step="any" [(ngModel)]="request.grossWages" name="grossWages" id="grossWages" class="form-control" placeholder="{{languageSettings.grossWagesPlaceHolderText}}">
 			</div>
 			<div class="form-group">
 				<label for="hoursWorked">{{languageSettings.hoursWorkedLabelText}}</label>
-				<input type="number" step="any" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked" class="form-control" placeholder="{{languageSettings.hoursWorkedPlaceHolderText}}">
+				<input type="number" required min="0" step="any" [(ngModel)]="request.hoursWorked" name="hoursWorked" id="hoursWorked" class="form-control" placeholder="{{languageSettings.hoursWorkedPlaceHolderText}}">
 			</div>
 			<div class="form-group">
 				<label for="minimumWage">{{languageSettings.minimumWageLabelText}}</label>
-				<input type="number" step="any" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage" class="form-control">
+				<input type="number" required min="0" step="any" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage" class="form-control">
 			</div>
 
 			<button type="submit" class="btn btn-primary">{{languageSettings.submitButtonText}}</button>
