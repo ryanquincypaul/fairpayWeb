@@ -26,6 +26,7 @@ As this is a proof of concept, any further changes made to this project will be 
 * Accurate translations
 * More translations (Arabic, French, Bangla, etc.) to keep us with large immigrant populations in the US
 * Provide location specific law office or non-profit contact info for users to contact regarding potential wage theft.
+* Implement better state management to reduce the number of input and output properties flying between components
 
 # Angular-CLI Information
 
