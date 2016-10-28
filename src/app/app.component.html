@@ -1,3 +1,7 @@
 <app-nav-bar (languageChanged)="onLanguageChanged($event)" [languageSettings]="languageSettings.navBar" (navigationLocationChanged)="onNavigationLocationChanged($event)">loading nav-bar</app-nav-bar>
-<app-fairpay *ngIf="navigationLocation == 'FairPay'" [languageSettings]="languageSettings" [navigationLocation]="navigationLocation">Loading</app-fairpay>
-<app-about *ngIf="navigationLocation == 'About'" [languageSettings]="languageSettings.about"></app-about>
+<div class="container">
+    <app-fairpay *ngIf="navigationLocation == 'FairPay'" [languageSettings]="languageSettings" [navigationLocation]="navigationLocation">Loading</app-fairpay>
+</div>
+<div class="container">
+    <app-about *ngIf="navigationLocation == 'About'" [languageSettings]="languageSettings.about"></app-about>
+</div>
