@@ -5,7 +5,7 @@ import { LanguageSettingsMinimumWage} from '../shared';
 @Component({
   selector: 'app-minimum-wage',
   templateUrl: './minimum-wage.component.html',
-  styleUrls: ['./minimum-wage.component.css'],
+  styleUrls: ['minimum-wage.component.css'],
   providers: [MinimumWageService]
 })
 
