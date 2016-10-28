@@ -22,7 +22,9 @@
 				<input type="number" required min="0" step="any" [(ngModel)]="minimumWageForCalculation" (change)="onMinimumWageChange()" name="minimumWage" id="minimumWage" class="form-control">
 			</div>
 
-			<button type="submit" class="btn btn-primary">{{languageSettings.submitButtonText}}</button>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">{{languageSettings.submitButtonText}}</button>
+			</div>
 		</form>
 	</div>
 </div>
