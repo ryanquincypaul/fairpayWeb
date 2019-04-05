@@ -5,8 +5,6 @@ A web application powered by Angular 2 that determines potential wage theft base
 ## Hosting Info
 Check it out live [here](https://ryanquincypaul.github.io/fairpayWeb).
 
-** NOTE:** A [required web service](https://github.com/ryanquincypaul/fairpay) is no longer hosted. Maybe in the future I will spin it back up again. Till then, the above website will just show the menubar.
-
 ## Usage
 
 A user is prompted to enter information to determine the minimum wage that applies to their state as well as pay stub information in order to calculate their expected gross earnings and determine if they adhere to labor law.
